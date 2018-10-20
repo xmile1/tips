@@ -1,0 +1,79 @@
+{
+    "name": "tips",
+    "displayName": "tips",
+    "description": "Fully customizable and extendable tips popup for vscode",
+    "version": "0.0.1",
+    "publisher": "uyiosa-enabulele",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": ["onCommand:extension.tips", "*"],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.tips",
+                "title": "Tips: Display a tip"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Tips Configuration",
+            "properties": {
+                "tips.blacklist": {
+                    "type": "array",
+                    "default": [],
+                    "description": "Do not display these categories of tips."
+                },
+                "tips.whitelist": {
+                    "type": "array",
+                    "default": [],
+                    "description": "Only display these categories of tips"
+                },
+                "tips.frequency": {
+                    "type": "string",
+                    "default": "1 day",
+                    "description": "Display tips at this frequency",
+                    "examples": ["5 days", "3 hrs", "1 min", "35 mins"]
+                }
+            }
+        }
+    },
+    "tips": {
+        "general": [{
+                "text": "this is one",
+                "more": "https://marketplace.visualstudio.com/items?itemName=uyiosa-enabulele.reopenclosedtab"
+            },
+            {
+                "text": "this is no two",
+                "more": "https://marketplace.visualstudio.com/items?itemName=uyiosa-enabulele.reopenclosedtab"
+            }],
+        "vscode": [{
+                "text": "A vscode tip",
+                "more": "https://marketplace.visualstudio.com/items?itemName=uyiosa-enabulele.reopenclosedtab"
+            }],
+        "javascript": [{
+                "text": "Press A to Close",
+                "more": "http: //seetipdetailshere.com"
+            }]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.0.43",
+        "opn": "^5.4.0",
+        "tslint": "^5.8.0",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6"
+    },
+    "dependencies": {}
+}
