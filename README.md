@@ -3,7 +3,7 @@ Tips is a fully customizable vscode extension that displays tips/tricks pooled f
 
 With Tips, you learn new tips about `your editor`, `your extensions`, `your frameworks`, `your languages` and `any subject` depending on your installed Tip packs, in the most customizable, convinient and non intrusive way
 
-Developers can add tips to their extension by simply adding the tips property to their package.json. [See API below]()
+Developers can add tips to their extension by simply adding the tips property to their package.json. [See API below](#api)
 
 ---
 ## Features
@@ -26,7 +26,7 @@ Developers can add tips to their extension by simply adding the tips property to
 
 * You can create your own Tips pack following the simple steps given here
 
-* Developers can simply add tip to their extension in package.json and `Tips` will display them, see API for details
+* Developers can simply add tip to their extension in package.json and `Tips` will display them, [See API below](#api)
 
 ---
 ## Installation
