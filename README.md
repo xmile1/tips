@@ -8,11 +8,11 @@ Developers can add tips to their extension by simply adding the tips property to
 ---
 ## Features
 
-![tips-demo](http://g.recordit.co/JodC3gbnbs.gif "Tips Demo")
+![tips-demo](./images/tips-demo.gif "Tips Demo")
 
 * You can choose the way you want to display your tips, 
 
-    * In the very less prominent status bar
+    * In the less prominent status bar
     * As a simple vscode notifications with a link to learn more that auto hides after some seconds
     * As a vscode notifications with action buttons for next tip and a link to learn more
 
@@ -20,7 +20,7 @@ Developers can add tips to their extension by simply adding the tips property to
 
 * Whitelist and Blacklist to customize and streamline the categories of tips to display
 
-![tips-settings-demo](http://recordit.co/UVJKxlpmyk.gif "Tips settings demo")
+![tips-settings-demo](./images/tips-settings-demo.gif "Tips settings demo")
 
 * You can find Tips packs from [vscode marketplace](https://marketplace.visualstudio.com/) and install to get more tips
 
@@ -31,8 +31,8 @@ Developers can add tips to their extension by simply adding the tips property to
 ---
 ## Installation
 
-Inside VSCode, press Cmd + P (Windows: Ctrl+P), and enter:
-type `ext install tips`
+* Inside VSCode, press Cmd + P (Windows: Ctrl+P), and enter:
+* type `ext install tips`
 
 ---
 ## Usage
@@ -51,12 +51,12 @@ Tip is set by default to show One(1) random tip daily from any random category u
 
 You can customize Tip by modifying the following in you Workspace or User Settings :
 
-Setting | Description | Options | Default | examples
+Setting | Description | Options | Default | Examples |
 --- | --- | --- | --- | --- |
-|`tips.frequency`: string| Display tips at this frequency | can be in `mins`, `hrs`, `days` | 1 day | `5 days`, `1 min`, `10 hrs`,
-* `tips.blacklist`: array\<string\> | Do not display these categories of tips | | nil | ["general", "javascript"] |
-* `tips.whitelist`| Only display these categories of tips | | nil | ["gitlens", "vsLiveShare"]
-* `tip.displayMode`| Display tips using any convenient notification type available on vscode | `notification without action`, `notification with action`, `status bar` | notification with action | notification without action
+|`tips.frequency`: string| Display tips at this frequency | can be in `mins`, `hrs`, `days` | 1 day | `5 days`, `1 min`, `10 hrs` |
+| `tips.blacklist`: array\<string\> | Do not display these categories of tips | | nil | ["general", "javascript"] |
+| `tips.whitelist`| Only display these categories of tips | | nil | ["gitlens", "vsLiveShare"] |
+| `tip.displayMode`| Display tips using any convenient notification type available on vscode | `notification without action`, `notification with action`, `status bar` | notification with action | notification without action |
 
 ---
 
@@ -78,7 +78,7 @@ While developing your extension, you can simply add a tips property with value a
 }
 ```
 
-for example
+for example #package.json
 
 ```json
 {
@@ -104,17 +104,17 @@ for example
 }
 ```
 
+find a sample package.json [here](https://github.com/xmile1/vscode-tips-pack-template/blob/master/package.json)
 
-
-### Tip Packs
+### Tips Pack
 You can create a `Tips Pack` by 
 
-* simply cloning `https://github.com/xmile1/vscode-tips-pack`
+* simply cloning `https://github.com/xmile1/vscode-tips-pack-template`
 
     ```
-    git clone https://github.com/xmile1/vscode-tips-pack your-tips-pack-name
+    git clone git@github.com:xmile1/vscode-tips-pack-template.git your-tips-pack-name
     ```
-
+* replace the tips object in the [package.json](https://github.com/xmile1/vscode-tips-pack-template/blob/master/package.json) with your categories and tips content
 * Update all other personal details in the pacakge.json
 * [publish](https://code.visualstudio.com/docs/extensions/publish-extension) your Tips Pack to vscode marketplace
 
