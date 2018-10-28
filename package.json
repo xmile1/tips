@@ -1,11 +1,12 @@
 {
     "name": "tips",
     "displayName": "Tips",
-    "description": "Fully customizable and extendable tips popup for vscode",
+    "description": "Displays fully customizable and extendable tips in vscode",
     "version": "1.0.0",
+    "icon": "images/icon.png",
     "publisher": "uyiosa-enabulele",
     "repository": {
-        "url": "https://gitlab.com/xmile/vscode-tips"
+        "url": "https://github.com/xmile1/tips"
     },
     "engines": {
         "vscode": "^1.28.0"
