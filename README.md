@@ -8,7 +8,7 @@ Developers can add tips to their extension by simply adding the tips property to
 ---
 ## Features
 
-![tips-demo](./images/tips-demo.gif "Tips Demo")
+![tips-demo](https://github.com/xmile1/tips/blob/development/images/tips-demo.gif "Tips Demo")
 
 * You can choose the way you want to display your tips, 
 
@@ -20,7 +20,7 @@ Developers can add tips to their extension by simply adding the tips property to
 
 * Whitelist and Blacklist to customize and streamline the categories of tips to display
 
-![tips-settings-demo](./images/tips-settings-demo.gif "Tips settings demo")
+![tips-settings-demo](https://github.com/xmile1/tips/blob/development/images/tips-settings-demo.gif "Tips settings demo")
 
 * You can find Tips packs from [vscode marketplace](https://marketplace.visualstudio.com/) and install to get more tips
 
@@ -78,9 +78,11 @@ While developing your extension, you can simply add a tips property with value a
 }
 ```
 
-for example #package.json
+for example
 
 ```json
+#package.json
+
 {
   ...
 
@@ -104,7 +106,7 @@ for example #package.json
 }
 ```
 
-find a sample package.json [here](https://github.com/xmile1/vscode-tips-pack-template/blob/master/package.json)
+Find a sample package.json [here](https://github.com/xmile1/vscode-tips-pack-template/blob/master/package.json)
 
 ### Tips Pack
 You can create a `Tips Pack` by 
@@ -119,11 +121,15 @@ You can create a `Tips Pack` by
 * [publish](https://code.visualstudio.com/docs/extensions/publish-extension) your Tips Pack to vscode marketplace
 
 
-
 ---
 ## Release Notes
 
 [See Changelog](https://github.com/xmile1/vscode-tips/blob/master/CHANGELOG.md)
+
+---
+## Credit
+
+Icon by [IconLeak](http://iconleak.com)
 
 ---
 
