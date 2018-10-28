@@ -1,16 +1,21 @@
 {
     "name": "tips",
-    "displayName": "tips",
+    "displayName": "Tips",
     "description": "Fully customizable and extendable tips popup for vscode",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "uyiosa-enabulele",
+    "repository": {
+        "url": "https://gitlab.com/xmile/vscode-tips"
+    },
     "engines": {
         "vscode": "^1.28.0"
     },
     "categories": [
         "Other"
     ],
-    "activationEvents": ["onCommand:extension.tips", "*"],
+    "activationEvents": [
+        "*"
+    ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
@@ -37,28 +42,69 @@
                     "type": "string",
                     "default": "1 day",
                     "description": "Display tips at this frequency",
-                    "examples": ["5 days", "3 hrs", "1 min", "35 mins"]
+                    "examples": [
+                        "5 days",
+                        "3 hrs",
+                        "1 min",
+                        "35 mins"
+                    ]
+                },
+                "tips.displayMode": {
+                    "type": "string",
+                    "default": "notification with action",
+                    "description": "Display tips using any convenient notification type available on vscode",
+                    "examples": [
+                        "notification with action",
+                        "notification without action",
+                        "status bar"
+                    ]
                 }
             }
         }
     },
     "tips": {
-        "general": [{
-                "text": "this is one",
-                "more": "https://marketplace.visualstudio.com/items?itemName=uyiosa-enabulele.reopenclosedtab"
+        "vscode": [
+            {
+                "text": "Access all available commands based on your current context. Keyboard Shortcut: ⇧⌘P",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-palette"
             },
             {
-                "text": "this is no two",
-                "more": "https://marketplace.visualstudio.com/items?itemName=uyiosa-enabulele.reopenclosedtab"
-            }],
-        "vscode": [{
-                "text": "A vscode tip",
-                "more": "https://marketplace.visualstudio.com/items?itemName=uyiosa-enabulele.reopenclosedtab"
-            }],
-        "javascript": [{
-                "text": "Press A to Close",
-                "more": "http: //seetipdetailshere.com"
-            }]
+                "text": "In the bottom right of the Welcome page, there is a link to the Interactive playground where you can interactively try out VS Code's features. Help > Interactive Playground.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_getting-started"
+            },
+            {
+                "text": "In the bottom right of the Welcome page, there is a link to the Interactive playground where you can interactively try out VS Code's features. Help > Interactive Playground.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_getting-started"
+            },
+            {
+                "text": "All of the commands are in the Command Palette with the associated key binding (if it exists). If you forget a keyboard shortcut, use the Command Palette to help you out.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_default-keyboard-shortcuts"
+            },
+            {
+                "text": "Download the keyboard shortcut reference sheet for your platform (macOS, Windows, Linux).",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_keyboard-reference-sheets"
+            },
+            {
+                "text": "Quickly open files. Keyboard Shortcut: ⌘P",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_quick-open"
+            },
+            {
+                "text": " Press ⌘P and Type ? to view help suggestions.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_quick-open"
+            },
+            {
+                "text": " Quickly jump to errors and warnings in the project,  Keyboard Shortcut: ⇧⌘M Cycle through errors with F8 or ⇧F8",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_errors-and-warnings"
+            },
+            {
+                "text": " Quickly jump to errors and warnings in the project,  Keyboard Shortcut: ⇧⌘M Cycle through errors with F8 or ⇧F8",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_change-language-mode"
+            },
+            {
+                "text": " Change language mode, Keyboard Shortcut: ⌘K M",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_errors-and-warnings"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
@@ -70,10 +116,11 @@
     "devDependencies": {
         "@types/mocha": "^2.2.42",
         "@types/node": "^7.0.43",
-        "opn": "^5.4.0",
         "tslint": "^5.8.0",
         "typescript": "^2.6.1",
         "vscode": "^1.1.6"
     },
-    "dependencies": {}
+    "dependencies": {
+        "opn": "^5.4.0"
+    }
 }

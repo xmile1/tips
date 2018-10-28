@@ -1,3 +1,12 @@
+const conversionFactor = {
+    min: 1000 * 60,
+    mins: 1000 * 60,
+    hr: 1000 * 60 * 60,
+    hrs: 1000 * 60 * 60,
+    day: 1,
+    days: 1,
+}
+
 export const parseFrequency = (frequency) => {
     if (frequency === 'never') {
         return false
@@ -9,15 +18,6 @@ export const parseFrequency = (frequency) => {
     }
 
     return false
-}
-
-
-const conversionFactor = {
-    min: 1000 * 60,
-    mins: 1000 * 60,
-    hr: 1000 * 60 * 60,
-    hrs: 1000 * 60 * 60,
-    day: 1,
 }
 
 export const showDaily = (context, frequency, parsedFrequency) => {

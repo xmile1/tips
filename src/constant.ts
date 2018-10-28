@@ -1,2 +1,5 @@
-export const LEARN_MORE = "learn More"
+export const LEARN_MORE = "Learn More"
 export const NEXT_TIP = "Next Tip"
+export const DISPLAY_MODE_STATUS = "status bar"
+export const DISPLAY_MODE_NOTIFICATION = "notification without action"
+export const DISPLAY_MODE_NOTIFICATION_WITH_ACTIONS = "notification with action"

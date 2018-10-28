@@ -1,6 +1,6 @@
 import * as vscode from 'vscode'
 import * as opn from 'opn'
-import { NEXT_TIP, LEARN_MORE } from './constant'
+import { NEXT_TIP, LEARN_MORE, DISPLAY_MODE_STATUS, DISPLAY_MODE_NOTIFICATION, DISPLAY_MODE_NOTIFICATION_WITH_ACTIONS } from './constant'
 
 interface ICategoryItems {
     text: string,
@@ -74,22 +74,34 @@ export default class Tips {
         return authorizedCategory[randomCategory]
     }
 
-    showRandomTip(){
-        const learnMore = "learn More"
-        const nextTip = "Next Tip"
+    showRandomTip(displayMode?:string){
         const tip = this.getRandomTip()
 
         //TODO: Inject the vscode dependency to inmprove loose coupling
-        const choices = vscode.window.showInformationMessage(tip.text, LEARN_MORE, NEXT_TIP)
+        let choices
+        const tipTextWithLink = `${tip.text}. \n [ ${LEARN_MORE} ](${tip.more})`
 
-        choices.then((choice) => {
-            switch (choice) {
-                case learnMore: opn(tip.more)
-                    break
-                case nextTip: this.showRandomTip()
-                    break
-                default: return null
+        switch (displayMode) {
+            case DISPLAY_MODE_STATUS: vscode.window.setStatusBarMessage(tipTextWithLink, 30000)
+            break
+            case DISPLAY_MODE_NOTIFICATION: vscode.window.showInformationMessage(tipTextWithLink)
+            break
+            case DISPLAY_MODE_NOTIFICATION_WITH_ACTIONS: {
+                choices = vscode.window.showInformationMessage(tip.text, NEXT_TIP, LEARN_MORE)
+                choices.then((choice) => {
+                    switch (choice) {
+                        case LEARN_MORE: opn(tip.more)
+                            break
+                        case NEXT_TIP: this.showRandomTip(displayMode)
+                            break
+                        default: return null
+                    }
+                })
+            }
+            break
+            default: vscode.window.showInformationMessage(tipTextWithLink)
         }
-        })
+
+
     }
 }
