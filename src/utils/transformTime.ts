@@ -3,8 +3,8 @@ const conversionFactor = {
     mins: 1000 * 60,
     hr: 1000 * 60 * 60,
     hrs: 1000 * 60 * 60,
-    day: 1,
-    days: 1,
+    day: 1000 * 60 * 60 * 24,
+    days: 1000 * 60 * 60 * 24,
 }
 
 export const parseFrequency = (frequency) => {
@@ -20,19 +20,18 @@ export const parseFrequency = (frequency) => {
     return false
 }
 
-export const showDaily = (context, frequency, parsedFrequency) => {
-    if (frequency.includes('day') && parsedFrequency) {
+const millisecsToDay = (millisecs) => millisecs / (1000 * 60 * 60 * 24)
 
+export const parseDayFrequency = (context, frequency, parsedFrequency) => {
+    if (frequency.includes('day') && parsedFrequency) {
         const lastTipTime = context.workspaceState.get('tips.lastTipTime')
         if (!lastTipTime) {
-            return true
+            return 0
         }
         const lastTipDate = new Date(lastTipTime)
         const currentDate = new Date()
-        lastTipDate.setDate(lastTipDate.getDate() + parsedFrequency)
-        if (currentDate.getTime() >= lastTipDate.getTime()) {
-            return true
-        }
+        lastTipDate.setDate(lastTipDate.getDate() + millisecsToDay(parsedFrequency))
+        return lastTipDate.getTime() - currentDate.getTime()
     }
 
     return false
