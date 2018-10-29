@@ -146,8 +146,84 @@
                 "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-line"
             },
             {
-                "text": " open the current directory in the most recently used code window 'code -r .' NB: Make sure the VS Code binary is on your path",
+                "text": "open the current directory in the most recently used code window 'code -r .' NB: Make sure the VS Code binary is on your path",
                 "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-line"
+            },
+            {
+                "text": "Change your them: Keyboard Shortcut: ⌘K ⌘T",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_change-your-theme"
+            },
+            {
+                "text": "Keymaps: Are you used to keyboard shortcuts from another editor? You can install a Keymap extension that brings the keyboard shortcuts from your favorite editor to VS Code. Go to Preferences > Keymap Extensions to see the current list on the Marketplace.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_keymaps"
+            },
+            {
+                "text": "Customize your keyboard shortcuts, Keyboard Shortcut: ⌘K ⌘S",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_customize-your-keyboard-shortcuts"
+            },
+            {
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). Add `'editor.formatOnPaste': true` for Format on paste  ",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
+            },
+            {
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). Add `'editor.fontSize': 18` to Change the font size  ",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
+            },
+            {
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). Add `'editor.zoomLevel': 5` to Change the zoom level ",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
+            },
+            {
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). for Font Ligature add `'editor.fontFamily': 'Fira Code'` and `'editor.fontLigatures': true`. NB: You will need to have a font installed that supports font ligatures.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
+            },
+            {
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). for Font Ligature add `'editor.fontFamily': 'Fira Code'` and `'editor.fontLigatures': true`. NB: You will need to have a font installed that supports font ligatures.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
+            },
+            {
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). to Auto Save add `'files.autoSave': 'afterDelay'`. NB: You can also toggle Auto Save from the top-level menu with the File > Auto Save." ,
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
+            },
+            {
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). to Format on Save add `'editor.formatOnSave': true`." ,
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
+            },
+            {
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). to Change the size of Tab characters add `'editor.tabSize': 4`.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
+            },
+            {
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). for Spaces or Tabs add `'editor.insertSpaces': true`.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
+            },
+            {
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). to Render whitespace add `'editor.renderWhitespace': 'all'`.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
+            },
+            {
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). to Format on Save add `'editor.formatOnSave': true`.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
+            },
+            {
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). to Ignore files/folders from your editor window. add `'files.exclude': { 'somefolder/': true, 'somefile': true}`.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
+            },
+            {
+                "text": "For those settings you only want for specific languages, you can scope the settings by the language identifier. You can find a list of commonly used language ids in the Language Identifiers reference.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_language-specific-settings"
+            },
+            {
+                "text": "Extensions: Keyboard Shortcut: ⇧⌘X. In the Extensions view, you can search via the search bar or click the More Actions (...) button to filter and sort by install count.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_install-extensions"
+            },
+            {
+                "text": "Creating my own extension: Are you interested in creating your own extension? You can learn how to do this in the extension documentation.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_creating-my-own-extension"
+            },
+            {
+                "text": "Integrated Terminal: Keyboard Shortcut: ⌃`",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_integrated-terminal"
             }
         ]
     },
