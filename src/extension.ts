@@ -11,6 +11,7 @@ export function activate(context: vscode.ExtensionContext) {
     const { blacklist, whitelist, frequency, displayMode }: any = getConfig(['blacklist', 'whitelist', 'frequency', 'displayMode'])
     const parsedFrequency = parseFrequency(frequency)
     const tips = new Tips( whitelist, blacklist)
+    const minimumFrequency = (1000 * 60) - 1
 
     vscode.extensions.all.forEach((ext) => {
         if (ext.packageJSON.tips) {
@@ -21,7 +22,7 @@ export function activate(context: vscode.ExtensionContext) {
     if (showDaily(context, frequency, parsedFrequency)) {
         tips.showRandomTip(displayMode)
         context.workspaceState.update('tips.lastTipTime', new Date())
-    } else if (parsedFrequency) {
+    } else if (parsedFrequency && +parsedFrequency > minimumFrequency) {
         tipInterval = setInterval((()=> tips.showRandomTip(displayMode)).bind(tips), parsedFrequency)
     }
 
@@ -33,6 +34,6 @@ export function activate(context: vscode.ExtensionContext) {
 
 export function deactivate() {
     if (tipInterval) {
-        tipInterval.close()
+        clearInterval(tipInterval)
     }
 }
