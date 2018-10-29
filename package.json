@@ -224,6 +224,54 @@
             {
                 "text": "Integrated Terminal: Keyboard Shortcut: ⌃`",
                 "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_integrated-terminal"
+            },
+            {
+                "text": "Toggle Sidebar: Keyboard Shortcut: ⌘B",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_toggle-sidebar"
+            },
+            {
+                "text": "Zen mode! Enter distraction free Zen mode: Keyboard Shortcut: ⌘K Z. Press Esc twice to exit Zen Mode.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_zen-mode"
+            },
+            {
+                "text": "Side by side editing: Keyboard Shortcut: ⌘\\. You can also drag and drop editors to create new editor groups and move editors between groups.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_side-by-side-editing"
+            },
+            {
+                "text": "Switch between editors: Keyboard Shortcut: ⌘1, ⌘2, ⌘3",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_switch-between-editors"
+            },
+            {
+                "text": "Move to Explorer window: Keyboard Shortcut: ⇧⌘E",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_move-to-explorer-window"
+            },
+            {
+                "text": "Create or open a file: Keyboard Shortcut: Ctrl+click (Cmd+click on macOS). You can quickly open a file or image or create a new file by moving the cursor to the file link and using Ctrl+click.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_create-or-open-a-file"
+            },
+            {
+                "text": "Close the currently opened folder: Keyboard Shortcut: ⌘W",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_close-the-currently-opened-folder"
+            },
+            {
+                "text": "Navigate entire history: ⌃Tab, Navigate back: ⌃-, Navigate forward: ⌃⇧-",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_navigation-history"
+            },
+            {
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). Create language associations for files that aren't detected correctly. For example, many configuration files with custom file extensions are actually JSON. `'files.associations': {'.database': 'json'}`",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_create-or-open-a-file"
+            },
+            {
+                "text": "Multi cursor selection: To add cursors at arbitrary positions, select a position with your mouse and use Alt+Click.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_multi-cursor-selection"
+            },
+            {
+                "text": "Multi cursor selection: You can use ⌘D to select the next occurrence after the one you selected",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_multi-cursor-selection"
+            },
+            {
+                "text": "Column (box) selection: You can select blocks of text by holding Shift+Alt while you drag your mouse. A separate cursor will be added to the end of each selected line.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_column-box-selection"
             }
         ]
     },
