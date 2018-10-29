@@ -70,19 +70,15 @@
                 "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-palette"
             },
             {
-                "text": "In the bottom right of the Welcome page, there is a link to the Interactive playground where you can interactively try out VS Code's features. Help > Interactive Playground.",
+                "text": "In the bottom right of the Welcome page, there is a link to the Interactive playground where you can interactively try out VS Code's features. You can also access it from Help > Interactive Playground.",
                 "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_getting-started"
             },
             {
-                "text": "In the bottom right of the Welcome page, there is a link to the Interactive playground where you can interactively try out VS Code's features. Help > Interactive Playground.",
-                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_getting-started"
-            },
-            {
-                "text": "All of the commands are in the Command Palette with the associated key binding (if it exists). If you forget a keyboard shortcut, use the Command Palette to help you out.",
+                "text": "All of the commands are in the Command Palette with the associated key binding (if it exists). If you forget a keyboard shortcut, use the Command Palette to help you out. Keyboard Shortcut: ⇧⌘P",
                 "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_default-keyboard-shortcuts"
             },
             {
-                "text": "Download the keyboard shortcut reference sheet for your platform (macOS, Windows, Linux).",
+                "text": "Click on learn more to download the keyboard shortcut reference sheet for your platform (macOS, Windows, Linux).",
                 "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_keyboard-reference-sheets"
             },
             {
@@ -98,12 +94,60 @@
                 "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_errors-and-warnings"
             },
             {
-                "text": " Quickly jump to errors and warnings in the project,  Keyboard Shortcut: ⇧⌘M Cycle through errors with F8 or ⇧F8",
-                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_change-language-mode"
-            },
-            {
                 "text": " Change language mode, Keyboard Shortcut: ⌘K M",
                 "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_errors-and-warnings"
+            },
+            {
+                "text": "To preview a markdown file, hit ⌘ + \\ to split the page followed by Shift+⌘+V.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_open-markdown-preview"
+            },
+            {
+                "text": "Go to Definition: Select a symbol then type F12. Alternatively, you can use Ctrl+click (Cmd+click on macOS). You can go back to your previous location with  ⌃ + -",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_go-to-definition"
+            },
+            {
+                "text": "Find All References: Select a symbol then type ⇧F12",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_find-all-references"
+            },
+            {
+                "text": "Rename Symbol: Select a symbol then type F2",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_rename-symbol"
+            },
+            {
+                "text": "Besides searching and replacing expressions, you can also search and reuse parts of what was matched, using regular expressions with capturing groups. Enable regular expressions in the search box by clicking the Use Regular Expression .* button (⌥⌘R) and then write a regular expression and use parenthesis to define groups. You can then reuse the content matched in each group by using $1, $2, etc. in the Replace field.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_search-and-modify"
+            },
+            {
+                "text": "You can create custom snippet by going to, File > Preferences > User Snippets (Code > Preferences > User Snippets on macOS), select the language, and create a snippet.",
+                "more": "https://code.visualstudio.com/docs/editor/userdefinedsnippets"
+            },
+            {
+                "text": "Git integration: Keyboard Shortcut: ⌃⇧G",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_git-integration"
+            },
+            {
+                "text": "To Configure debugger, open the Command Palette (⇧⌘P) and select 'Debug: Open launch.json', which will prompt you to select the environment that matches your project (Node.js, Python, C++, etc). This will generate a launch.json file. Node.js support is built-in and other environments require installing the appropriate language extensions",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_configure-debugger"
+            },
+            {
+                "text": "Portable mode: VS Code has a Portable mode which lets you keep settings and data in the same location as your installation, for example, on a USB drive.",
+                "more": "https://code.visualstudio.com/docs/editor/portable"
+            },
+            {
+                "text": "The Visual Studio Code team uses the Insiders version to test the latest features and bug fixes of VS Code. You can also use the Insiders version, click learn more to download it.",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_insiders-builds"
+            },
+            {
+                "text": "Quickly open files. Keyboard Shortcut: ⌘P, Repeat the Quick Open keyboard shortcut to cycle quickly between recently opened files. Also, you can open multiple files from Quick Open by pressing the Right arrow key. This will open the currently selected file in the background and you can continue selecting files from Quick Open",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_quick-open"
+            },
+            {
+                "text": " open code with current directory 'code .' NB: Make sure the VS Code binary is on your path",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-line"
+            },
+            {
+                "text": " open the current directory in the most recently used code window 'code -r .' NB: Make sure the VS Code binary is on your path",
+                "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-line"
             }
         ]
     },
