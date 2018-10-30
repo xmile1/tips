@@ -22,7 +22,7 @@ Developers can add tips to their extension by simply adding the tips property to
 
 ![tips-settings-demo](https://github.com/xmile1/tips/blob/development/images/tips-settings-demo.gif?raw=true%22Demo%22 "Tips settings demo")
 
-* You can find Tips packs from [vscode marketplace](https://marketplace.visualstudio.com/) and install to get more tips
+* You can find Tip packs from [vscode marketplace](https://marketplace.visualstudio.com/) and install to get more tips
 
 * You can create your own Tips pack following the simple steps given here
 
@@ -37,7 +37,7 @@ Developers can add tips to their extension by simply adding the tips property to
 ---
 ## Usage
 
-Tip is set by default to show One(1) random tip daily from any random category using the `Notification with action` display mode, you can however modify these setting to suit your need.
+Tip is set by default to show One(1) random tip daily from any random category using the `Notification with action` display mode, you can however modify these setting to suit your need, check [extension settings for details](#extension-settings).
 
 #### To manually display a tip:
 * Inside VSCode, press Cmd + Shift + P,
@@ -49,7 +49,7 @@ Tip is set by default to show One(1) random tip daily from any random category u
 ---
 ## Extension Settings
 
-You can customize Tip by modifying the following in you Workspace or User Settings :
+You can customize Tips by modifying the following in your Workspace or User Settings :
 
 Setting | Description | Options | Default | Examples |
 --- | --- | --- | --- | --- |
