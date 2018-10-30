@@ -8,7 +8,7 @@ Developers can add tips to their extension by simply adding the tips property to
 ---
 ## Features
 
-![tips-demo](https://github.com/xmile1/tips/blob/development/images/tips-demo.gif "Tips Demo")
+![tips-demo](https://github.com/xmile1/tips/blob/development/images/tips-demo.gif?raw=true%22Demo%22 "Tips Demo")
 
 * You can choose the way you want to display your tips, 
 
@@ -20,7 +20,7 @@ Developers can add tips to their extension by simply adding the tips property to
 
 * Whitelist and Blacklist to customize and streamline the categories of tips to display
 
-![tips-settings-demo](https://github.com/xmile1/tips/blob/development/images/tips-settings-demo.gif "Tips settings demo")
+![tips-settings-demo](https://github.com/xmile1/tips/blob/development/images/tips-settings-demo.gif?raw=true%22Demo%22 "Tips settings demo")
 
 * You can find Tips packs from [vscode marketplace](https://marketplace.visualstudio.com/) and install to get more tips
 

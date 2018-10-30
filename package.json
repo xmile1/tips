@@ -2,7 +2,7 @@
     "name": "tips",
     "displayName": "Tips",
     "description": "Displays fully customizable and extendable tips in vscode",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icon": "images/icon.png",
     "publisher": "uyiosa-enabulele",
     "repository": {
