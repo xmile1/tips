@@ -6,8 +6,24 @@
     "icon": "images/icon.png",
     "publisher": "uyiosa-enabulele",
     "repository": {
+        "type": "git",
         "url": "https://github.com/xmile1/tips"
     },
+    "bugs": {
+        "url": "https://github.com/xmile1/tips/issues",
+        "email": "hiskonxeptz@gmail.com"
+    },
+    "galleryBanner": {
+        "color": "#eff1f3",
+        "theme": "light"
+    },
+    "keywords": [
+        "tips",
+        "help",
+        "vscode tips",
+        "hints",
+        "tricks"
+    ],
     "engines": {
         "vscode": "^1.28.0"
     },
@@ -182,11 +198,11 @@
                 "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
             },
             {
-                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). to Auto Save add `'files.autoSave': 'afterDelay'`. NB: You can also toggle Auto Save from the top-level menu with the File > Auto Save." ,
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). to Auto Save add `'files.autoSave': 'afterDelay'`. NB: You can also toggle Auto Save from the top-level menu with the File > Auto Save.",
                 "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
             },
             {
-                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). to Format on Save add `'editor.formatOnSave': true`." ,
+                "text": "Tune your settings: Open User Settings (Keyboard Shortcut: `⌘+,`). to Format on Save add `'editor.formatOnSave': true`.",
                 "more": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings"
             },
             {
