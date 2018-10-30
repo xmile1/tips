@@ -5,3 +5,4 @@ export const DISPLAY_MODE_NOTIFICATION = "notification without action"
 export const DISPLAY_MODE_NOTIFICATION_WITH_ACTIONS = "notification with action"
 export const MINIMUM_FREQUENCY = (1000 * 60) - 1
 export const MAXIMUM_FREQUENCY = 2147483647
+export const INVALID_FREQUENCY_CONFIG = 'Invalid Frequency Configuration! Must be between 1 min and 25 days'
