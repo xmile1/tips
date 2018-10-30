@@ -131,7 +131,14 @@ You can create a `Tips Pack` by
 ---
 ## Credit
 
+Tips in this repository are from [Microsoft](https://code.visualstudio.com/docs/)
 Icon by [IconLeak](http://iconleak.com)
+
+---
+
+## Disclaimer
+
+Tips added to this extension were not created by me, they were copied from the official documentation of Vscode
 
 ---
 
