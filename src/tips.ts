@@ -22,14 +22,10 @@ export default class Tips {
         this.blackList = blackList
     }
 
-    addTip(tip){
-        this.addTips([tip])
-    }
-
     addTips(tips) {
         if (tips){
         Object.keys(tips).forEach((category) => {
-            const availableCategory = this.getCategoryItems[category] || []
+            const availableCategory = this.getCategoryItems(category) || []
             this.tips[category] = [ ...availableCategory, ...tips[category] ]
         })
     }
