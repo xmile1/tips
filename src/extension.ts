@@ -4,7 +4,7 @@ import * as vscode from 'vscode'
 import Tips from './tips'
 import { parseFrequency, parseDayFrequency } from './utils/transformTime'
 import { getConfig } from './utils/getConfig'
-import { MINIMUM_FREQUENCY, MAXIMUM_FREQUENCY } from './constant'
+import { MINIMUM_FREQUENCY, MAXIMUM_FREQUENCY, INVALID_FREQUENCY_CONFIG } from './constant'
 
 let tipInterval
 let tipTimeout
@@ -29,10 +29,11 @@ export function activate(context: vscode.ExtensionContext) {
                 context.workspaceState.update('tips.lastTipTime', new Date())
                 tipInterval = setInterval((() => tips.showRandomTip(displayMode)).bind(tips), +parsedFrequency)
             }).bind(tips), parsedDayFrequency)
-        } else if (parsedFrequency && +parsedFrequency > MINIMUM_FREQUENCY) {
-            tipInterval = setInterval((() => tips.showRandomTip(displayMode)).bind(tips), parsedFrequency)
+        } else {
+            tipInterval = setInterval((() => tips.showRandomTip(displayMode)).bind(tips), +parsedFrequency)
         }
-
+    } else {
+        vscode.window.showInformationMessage(INVALID_FREQUENCY_CONFIG)
     }
 
     let disposable = vscode.commands.registerCommand('extension.tips', () => {
@@ -42,8 +43,6 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 export function deactivate() {
-    if (tipInterval) {
-        clearInterval(tipInterval)
-        clearTimeout(tipTimeout)
-    }
+    if (tipInterval) { clearInterval(tipInterval) }     
+    if (tipTimeout) { clearTimeout(tipTimeout) }
 }
