@@ -24,7 +24,7 @@ const millisecsToDay = (millisecs) => millisecs / (1000 * 60 * 60 * 24)
 
 export const parseDayFrequency = (context, frequency, parsedFrequency) => {
     if (frequency.includes('day') && parsedFrequency) {
-        const lastTipTime = context.workspaceState.get('tips.lastTipTime')
+        const lastTipTime = context.globalState.get('tips.lastTipTime')
         if (!lastTipTime) {
             return 0
         }

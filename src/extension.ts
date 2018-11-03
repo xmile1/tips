@@ -26,7 +26,7 @@ export function activate(context: vscode.ExtensionContext) {
         if (parsedDayFrequency !== false) {
             tipTimeout = setTimeout((() => {
                 tips.showRandomTip(displayMode)
-                context.workspaceState.update('tips.lastTipTime', new Date())
+                context.globalState.update('tips.lastTipTime', new Date())
                 tipInterval = setInterval((() => tips.showRandomTip(displayMode)).bind(tips), +parsedFrequency)
             }).bind(tips), parsedDayFrequency)
         } else {
